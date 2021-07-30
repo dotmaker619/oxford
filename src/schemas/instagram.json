@@ -1,0 +1,38 @@
+{
+  "Main": {
+    "date": {
+      "type": "Timestamp",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "image": {
+      "type": "Link",
+      "config": {
+        "select": "media",
+        "label": "Image"
+      }
+    },
+    "instagram": {
+      "type": "Embed",
+      "config": {
+        "label": "Instagram"
+      }
+    },
+    "products": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "product": {
+            "type": "IntegrationFields",
+            "config": {
+              "catalog": "oxfordpennant--shopify",
+              "label": "Product"
+            }
+          }
+        },
+        "label": "Products"
+      }
+    }
+  }
+}

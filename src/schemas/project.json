@@ -1,0 +1,172 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Slug",
+        "placeholder": "(i.e. project-name)"
+      }
+    },
+    "shopify_collection_handle": {
+      "type": "Text",
+      "config": {
+        "label": "Shopify Collection Handle"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "teaser": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink, embed",
+        "label": "Teaser"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {},
+        "choices": {
+          "content_grid": {
+            "type": "Slice",
+            "fieldset": "Content Grid",
+            "description": "As many as you want",
+            "icon": "border_all",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "image_size": {
+                "type": "Select",
+                "config": {
+                  "options": ["Small", "Medium", "Large", "Bleed"],
+                  "default_value": "Small",
+                  "label": "Image Size"
+                }
+              },
+              "header": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "Header"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading6, strong, em, hyperlink, list-item",
+                  "label": "Description"
+                }
+              },
+              "button_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Text"
+                }
+              },
+              "button_path": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Path",
+                  "placeholder": "(i.e. /about-us)"
+                }
+              }
+            }
+          },
+          "video": {
+            "type": "Slice",
+            "fieldset": "Video",
+            "description": "Video Player",
+            "icon": "play_arrow",
+            "display": "list",
+            "non-repeat": {
+              "size": {
+                "type": "Select",
+                "config": {
+                  "options": ["Large", "Medium", "Small"],
+                  "default_value": "Large",
+                  "label": "Size"
+                }
+              },
+              "url": {
+                "type": "Embed",
+                "config": {
+                  "label": "URL",
+                  "placeholder": "YouTube, Vimeo, etc"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "Image",
+            "description": "Large Image",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "SEO": {
+    "seo_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "seo_title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "seo_description": {
+      "type": "Text",
+      "config": {
+        "label": "Description"
+      }
+    },
+    "seo_keywords": {
+      "type": "Text",
+      "config": {
+        "label": "Keywords"
+      }
+    }
+  }
+}

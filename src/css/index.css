@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./form.css";
+@import "./carousel.css";
+
+@font-face {
+  font-family: "DIN-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/DIN-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskRoman";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/AkzidenzGroteskRoman.woff") format("woff");
+}
+
+body {
+  @apply bg-white font-sans text-blue-900;
+}
+
+.appearance-none {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.container {
+  @apply px-3;
+}
+
+.container-y {
+  @apply py-3;
+}
+
+.container-page {
+  @apply max-w-4xl mx-auto px-6;
+}
+
+@screen md {
+  .container {
+    @apply px-8;
+  }
+
+  .container-y {
+    @apply py-8;
+  }
+
+  .container-page {
+    @apply py-8;
+  }
+}
+
+.btn {
+  @apply inline-block px-4 py-3 leading-none font-heading uppercase;
+}
+
+.btn-orange {
+  @apply bg-orange-500 text-white;
+}
+
+.btn-navy {
+  @apply bg-blue-900 text-white;
+}
+
+.cart {
+  @apply fixed inset-y-0 right-0 z-50 bg-white;
+  transform: translate3d(100vw, 0, 0);
+  transition: all 0.2s ease;
+  width: 85vw;
+}
+
+.cart.open {
+  transform: unset;
+}
+
+body.modal-open {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+@screen md {
+  .cart {
+    transform: translate3d(28rem, 0, 0);
+    width: 28rem;
+  }
+}
+
+.hamburger {
+  @apply fixed inset-y-0 left-0 z-50 w-screen bg-opacity-0;
+  transition: all 0.2s ease;
+}
+
+.hamburger .hamburger-content {
+  transform: translate3d(-100vw, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.hamburger.open {
+  @apply bg-opacity-75;
+}
+
+.hamburger.open .hamburger-content {
+  transform: unset;
+}
+
+.slice-content-grid h1 {
+  @apply text-4xl leading-tight;
+  @apply md:text-5xl;
+}
+
+.slice-content-grid h2 {
+  @apply text-3xl leading-tight;
+  @apply md:text-4xl;
+}
+
+.slice-content-grid h3 {
+  @apply text-2xl leading-tight;
+  @apply md:text-3xl;
+}
+
+.slice-content-grid h4 {
+  @apply text-2xl;
+}
+
+.slice-content-grid h5 {
+  @apply text-xl;
+}
+
+.slice-content-grid h6 {
+  @apply text-lg;
+}
+
+.ais-Highlight .ais-Highlight-highlighted {
+  @apply bg-yellow-300 not-italic;
+}
+
+.swiper-wrapper {
+  @apply items-stretch;
+}

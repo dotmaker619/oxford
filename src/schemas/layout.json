@@ -1,0 +1,143 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    }
+  },
+  "ProductNavigation": {
+    "productNavigation": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "section": []
+        },
+        "choices": {
+          "section": {
+            "type": "Slice",
+            "fieldset": "Section",
+            "description": "Product Type",
+            "icon": "collections_bookmark",
+            "display": "list",
+            "non-repeat": {
+              "header": {
+                "type": "Text",
+                "config": {
+                  "label": "Header"
+                }
+              },
+              "path": {
+                "type": "Text",
+                "config": {
+                  "label": "Path (Optional)",
+                  "placeholder": ""
+                }
+              }
+            },
+            "repeat": {
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Text"
+                }
+              },
+              "path": {
+                "type": "Text",
+                "config": {
+                  "label": "Path",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Banner": {
+    "bannerText": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "strong, em",
+        "label": "Banner Text"
+      }
+    },
+    "bannerPath": {
+      "type": "Text",
+      "config": {
+        "label": "Banner Path",
+        "placeholder": "i.e. /pennants"
+      }
+    }
+  },
+  "Navigation": {
+    "navigationItems": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "text": {
+            "type": "Text",
+            "config": {
+              "label": "Text"
+            }
+          },
+          "path": {
+            "type": "Text",
+            "config": {
+              "label": "Path",
+              "placeholder": "i.e. /custom"
+            }
+          }
+        },
+        "label": "Navigation Items"
+      }
+    }
+  },
+  "Footer": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "link_column": []
+        },
+        "choices": {
+          "link_column": {
+            "type": "Slice",
+            "fieldset": "Link Column",
+            "description": "Column of links",
+            "icon": "filter_list",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Title"
+                }
+              }
+            },
+            "repeat": {
+              "text": {
+                "type": "Text",
+                "config": {
+                  "label": "Text"
+                }
+              },
+              "path": {
+                "type": "Text",
+                "config": {
+                  "label": "Path",
+                  "placeholder": "/about"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

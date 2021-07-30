@@ -1,0 +1,3 @@
+.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-blue-900 mx-2 !important;
+}

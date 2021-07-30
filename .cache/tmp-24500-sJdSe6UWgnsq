@@ -1,0 +1,1 @@
+require("D:/oxford/node_modules/gatsby/dist/utils/telemetry-server.js").default(51840)

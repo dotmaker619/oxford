@@ -1,0 +1,15 @@
+form input[type="text"],
+form input[type="email"] {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm;
+  @apply focus:border-orange-500 focus:ring focus:ring-orange-500 focus:ring-opacity-20;
+}
+
+select {
+  @apply block border-gray-300 rounded-md mt-1 shadow-sm !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm !important;
+}

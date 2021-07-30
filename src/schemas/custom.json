@@ -1,0 +1,99 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title"
+      }
+    },
+    "content": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Content"
+      }
+    },
+    "colors": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          },
+          "color": {
+            "type": "Color",
+            "config": {
+              "label": "Color"
+            }
+          }
+        },
+        "label": "Colors"
+      }
+    },
+    "icons": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "icon": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Icon"
+            }
+          },
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          }
+        },
+        "label": "Icons"
+      }
+    },
+    "type_style": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "image": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Image"
+            }
+          },
+          "name": {
+            "type": "Text",
+            "config": {
+              "label": "Name"
+            }
+          }
+        },
+        "label": "Type Style"
+      }
+    },
+    "galleries": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "gallery": {
+            "type": "Link",
+            "config": {
+              "select": "document",
+              "label": "Gallery",
+              "customtypes": ["gallery"]
+            }
+          }
+        },
+        "label": "Galleries"
+      }
+    }
+  }
+}

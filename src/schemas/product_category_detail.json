@@ -1,0 +1,70 @@
+{
+  "Main": {
+    "productType": {
+      "type": "Select",
+      "config": {
+        "options": ["Flag", "Pennant", "Camp Flag", "Banner"],
+        "default_value": "Flag",
+        "label": "Product Type"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "video": []
+        },
+        "choices": {
+          "video": {
+            "type": "Slice",
+            "fieldset": "Video",
+            "description": "Video Player",
+            "icon": "play_circle_outline",
+            "display": "list",
+            "non-repeat": {
+              "url": {
+                "type": "Embed",
+                "config": {
+                  "label": "URL"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "columns": {
+            "type": "Slice",
+            "fieldset": "Columns",
+            "description": "As many as you want",
+            "icon": "view_column",
+            "display": "grid",
+            "non-repeat": {},
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading6, strong, em, hyperlink, list-item",
+                  "label": "Description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
